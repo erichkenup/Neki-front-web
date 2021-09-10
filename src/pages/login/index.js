@@ -4,6 +4,7 @@ import { useHistory, Link } from "react-router-dom";
 import MensagemErro from "./MensagemErro";
 import logo from '../../assets/images/logoLogin.png';
 import http from "../../services/http";
+import "./style.css"
 
 function Login() {
 
@@ -61,27 +62,29 @@ function Login() {
         <input
           type="text"
           placeholder="Usuário"
-          className="form-control py-1 px-4"
+          className="form-control py-1 px-4 input"
           value={username}
           onChange={manipularUsername}
         />
-        <input
+        <input        
           type= {tipoSenha}
           placeholder="Senha"
-          className="form-control py-1 px-4"
+          className="form-control py-1 px-4 input"
           value={senha}
           onChange={manipularSenha}
         />
 
         {mensagem && <MensagemErro msg={mensagem} />}
         <button className="btn btn-primary">Logar</button>
-        <p></p>
-        <input type="checkbox"
+        <div className="inline2">
+          <input type="checkbox"
           checked={checked}
           onChange={handleChange}/>
         <p>Mostrar senha</p>
-      </form>
+        </div>
+        
       <Link className="noDecoration" to={"/cadastro" }>Cadastro</Link>
+      </form>
     </div>
     )
 }

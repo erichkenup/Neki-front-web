@@ -95,11 +95,11 @@ function Home() {
           return (
             <div key={skill.id} className="card">
               <img src={skill.skill.imageUrl} className="imgContainer" />
-              <p>nome {skill.skill.name}</p>
+              <p className="zebra">nome {skill.skill.name}</p>
               <p>versão {skill.skill.version}</p>
-              <p>descrição {skill.skill.description}</p>
+              <p className="zebra">descrição {skill.skill.description}</p>
               <p>Level {skill.knowledgeLevel}</p>
-              <p>Criado em {skill.createdAt}</p>
+              <p className="zebra">Criado em {skill.createdAt}</p>
               <p>Atualizado em {skill.updatedAt}</p>
               <div className="buttons">
                 <button onClick={() => setIsModalEditarVisible(true)}>
@@ -135,25 +135,25 @@ function Home() {
                     <input
                       type="text"
                       placeholder="Nome"
-                      className="form-control py-1 px-4"
+                      className="form-control py-1 px-4 buttonModal"
                       onChange={(value) => setNomeSkill(value.target.value)}
                     />
                     <input
                       type="text"
                       placeholder="Descrição"
-                      className="form-control py-1 px-4"
+                      className="form-control py-1 px-4 buttonModal"
                       onChange={(value) => setDescricao(value.target.value)}
                     />
                     <input
                       type="text"
                       placeholder="imageUrl"
-                      className="form-control py-1 px-4"
+                      className="form-control py-1 px-4 buttonModal"
                       onChange={(value) => setUrl(value.target.value)}
                     />
                     <input
                       type="text"
                       placeholder="level"
-                      className="form-control py-1 px-4"
+                      className="form-control py-1 px-4 buttonModal"
                       onChange={(value) => setLevel(value.target.value)}
                     />
                     <button onClick={() => salvarCriar()}>Salvar</button>

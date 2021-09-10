@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../../assets/images/bg-login.png');
+    background-image: url('../../assets/images/background.jpg');
     background-size: cover;
     background-position: top center;
     background-attachment: fixed;
@@ -17,8 +17,8 @@
 }
 
 .boxLogin {
-    min-height: 500px;
-    width: 450px;
+    min-height: 300px;
+    width: 280px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 5px;
     display: flex;
@@ -34,6 +34,14 @@
     margin: 2rem auto;
 }
 
-.boxLogin input {
+.boxLogin .input {
     margin-bottom: 2rem;
+}
+
+.inline2 {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
+
 }

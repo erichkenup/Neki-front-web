@@ -34,14 +34,14 @@ function Cadastro() {
         <input
           type="text"
           placeholder="Usuário"
-          className="form-control py-1 px-4"
+          className="form-control py-1 px-4 input"
           value={username}
           onChange={manipularUsername}
         />
         <input
           type= "password"
           placeholder="Senha"
-          className="form-control py-1 px-4"
+          className="form-control py-1 px-4 input"
           value={senha}
           onChange={manipularSenha}
         />
