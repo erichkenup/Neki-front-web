@@ -1,0 +1,39 @@
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/images/bg-login.png');
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.logoLogin {
+    max-width: 20px;
+    height: 10vh
+}
+
+.boxLogin {
+    min-height: 500px;
+    width: 450px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 50px;
+    -webkit-box-shadow: 10px 10px 17px 1px rgba(115, 115, 115, 1);
+    -moz-box-shadow: 10px 10px 17px 1px rgba(115, 115, 115, 1);
+    box-shadow: 10px 10px 17px 1px rgba(115, 115, 115, 1);
+}
+
+.boxLogin h3 {
+    margin: 2rem auto;
+}
+
+.boxLogin input {
+    margin-bottom: 2rem;
+}

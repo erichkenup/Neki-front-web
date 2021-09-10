@@ -1,0 +1,48 @@
+.imgContainer{
+    width: 50px;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.logout{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.containerCard{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 150px;
+    min-height: 200px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 1rem;
+}
+
+.card p {
+    margin: 0;
+}
+
+.buttons {
+    display: flex ;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.criar {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    
+}
